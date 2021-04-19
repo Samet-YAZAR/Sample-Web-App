@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace SampleWebApi.Services
 {
     using SampleWebApi.Models;
-    interface IDatabaseService
+    public interface IDatabaseService
     {
         IEnumerable<Animal> GetAnimals();
     }
