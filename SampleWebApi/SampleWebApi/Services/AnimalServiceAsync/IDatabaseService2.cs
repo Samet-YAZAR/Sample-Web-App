@@ -10,5 +10,7 @@ namespace SampleWebApi.Services.AnimalServiceAsync
     interface IDatabaseService2
     {
         Task<IEnumerable<Animal>> GetAnimalsByStoredProcedureAsync();
+        Task<IEnumerable<Animal>> GetAnimalsAsync();
+        Task<int> ChangeAnimalAsync();
     }
 }
