@@ -28,8 +28,8 @@ namespace SampleWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IDatabaseService,DatabaseService>();
-            services.AddSingleton<IDatabaseService2, DatabaseService2>();
+            services.AddScoped<IDatabaseService,DatabaseService>();
+            services.AddScoped<IDatabaseService2, DatabaseService2>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
